@@ -1,0 +1,43 @@
+.header{
+   width: 100%;
+   padding-top: 30px;
+
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 0;
+
+   z-index: 1000;
+}
+
+.header__content{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.header__nav{
+   display: flex;
+}
+
+.header__nav-link{
+   font-size: 20px;
+   color: $blue;
+}
+
+.header__nav-item + .header__nav-item{
+   margin-left: 40px;
+}
+ 
+.header__nav-certificate{
+   margin-right: 80px;
+
+   font-size: 20px;
+   color: $white;
+}
+
+.header__phone{
+   font-weight: 700;
+   font-size: 20px;
+   color: $white;
+}
