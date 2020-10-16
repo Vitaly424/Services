@@ -1,0 +1,177 @@
+
+
+
+
+.block-standart__section{
+   margin-top: 50px;
+   margin-bottom: 100px;
+
+   display: flex;
+   overflow: hidden;
+
+ 
+}
+
+ 
+
+.block-standart__section-conten{
+   flex: 0 0 100%;
+   display: flex;
+}
+
+.block-standart__section-image{
+   padding-bottom: 427px;
+
+   position: relative;
+   flex: 0 0 50%;
+   transform: translate(-100%, 0px);
+   img{
+      max-width: 100%;
+
+      width: 100%;
+      height: 100%;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      object-fit: cover;
+   }
+}
+
+
+.block-standart__section-body{
+   width: 50%;
+}
+
+
+
+
+.block-standart__title{
+   margin-bottom: 50px;
+
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 1.46;
+   color: $blue;
+}
+
+.block-stadart__geo-img{
+   margin-right: 18px;
+}
+
+.block-standart__geo{
+   display: flex;
+   align-items: center;
+}
+
+.block-standart__geo-title{
+   font-size: 20px;
+   line-height: 1.5;
+   color: $black;
+}
+
+.block-standart__geo-text{
+   margin-top: 8px;
+
+   font-size: 20px; 
+
+   span{
+      color: $gray;
+   }
+
+   a{
+      margin-left: 18px;
+
+      color: $blue;
+      border-bottom: 1px dashed $blue;
+      
+      transition: color .2s linear, border .2s linear;
+
+      &:hover{
+         color: $black;
+         border-bottom-color: $black;
+      }
+   }
+}
+
+
+.block-standart__info-item{
+   display: flex;
+   align-items: center;
+}
+
+.block-standart__info-img{
+   margin-right: 18px;
+}
+
+.block-standart__info{
+   justify-content: space-between;
+   max-width: 530px;
+
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.block-standart__info-item{
+   margin-top: 30px;
+}
+
+.block-standart__btns{
+   margin-top: 40px;
+   margin-bottom: 21px;
+
+   display: flex;
+   align-items: center;
+
+   .btn-arrow{
+      margin-right: 30px;
+   }
+}
+
+
+
+
+
+
+
+
+//section
+
+
+.block-standart__section{
+   display: flex;
+   overflow: hidden;
+}
+
+ 
+
+.block-standart__content{
+   flex: 0 0 100%;
+   display: flex;
+}
+
+.section__image{
+   padding-bottom: 427px;
+
+   position: relative;
+   flex: 0 0 50%;
+   transform: translate(-100%, 0px);
+   img{
+      max-width: 100%;
+
+      width: 100%;
+      height: 100%;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      object-fit: cover;
+   }
+}
+
+
+.block-standart__section-body{
+   width: 50%;
+}
+
+ 

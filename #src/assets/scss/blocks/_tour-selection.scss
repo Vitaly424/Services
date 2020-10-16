@@ -180,3 +180,26 @@
 .select32.select32--wh{
    width: 270px;
 }
+
+
+
+
+
+//tour-selection  information{
+.tour-selection.information{
+   .tour-selection__links{
+      justify-content: flex-end;
+      margin-right: 280px;
+   }  
+   
+   .tour-selection__list{
+      justify-content: flex-start;
+   }
+
+   .btn{
+      margin-top: 32px;
+   }
+
+}
+
+ 
