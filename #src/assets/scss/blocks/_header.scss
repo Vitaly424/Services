@@ -11,6 +11,8 @@
 }
 
 .header__content{
+   position: relative;
+
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -40,4 +42,161 @@
    font-weight: 700;
    font-size: 20px;
    color: $white;
+}
+
+
+
+.header__mobile{
+   display: none;
+     
+   width: 100%;
+}
+
+.header__mobile.header__mobile--active{
+   display: block;
+}   
+ 
+
+
+
+
+
+
+.header__burger{
+   display: none;
+
+   position: relative;
+
+   width: 80px;
+   height: 80px;
+   
+   cursor: pointer;
+ }
+
+ .header__burger-menu{
+   width: 30px;
+   height: 2px;
+   background-color: $blue;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   box-shadow: 0 2px 5px $blue;
+   transition: 0.5s;
+ }
+
+ .header__burger-menu::before,
+ .header__burger-menu::after{
+   content: '';
+   position: absolute;
+   width: 30px;
+   height: 2px;
+   background: $blue;
+   box-shadow: 0 2px 5px $blue;
+   transition: 0.5s;
+ }
+
+ .header__burger-menu::before{
+   top: -9px;
+ }
+
+ .header__burger-menu::after{
+   top: 9px;
+ }
+ 
+ .header__burger.active .header__burger-menu{
+   background: transparent;
+   box-shadow: none;
+ }
+
+ .header__burger.active .header__burger-menu::before{
+   top: 0;
+   transform: rotate(45deg);
+ }
+
+ .header__burger.active .header__burger-menu::after{
+   top: 0;
+   transform: rotate(135deg);
+ }
+
+
+.header__mobile-list{
+   display: none;
+
+   transition: transform .2s linear;
+   
+   background-color: $white;
+}
+
+.header__mobile-list.header__mobile-list--active{
+   display: block;
+   position: absolute;
+ 
+}
+
+.header__mobile-top{
+   display: flex;
+}
+
+.header__mobile-list{
+   display: none;
+
+   position: absolute;
+   left: 0;
+   right: 0;
+}
+
+.header__mobile-menu:not(:last-child){
+   margin-bottom: 5px;
+}
+
+.header__mobile-menu a {
+   display: block;
+   width: 100%;
+   padding: 15px;
+
+   text-align: center;
+   color: $black;
+   font-weight: 400;
+   font-size: 15px;
+
+   background-color: $green;
+   border: 3px solid $green;
+
+
+   transition: background-color .2s linear;
+   &:hover{
+      background-color: transparent;
+   }
+}
+
+@media (max-width: 1024px){
+
+   .header__descktop{
+      display: none;
+   }
+
+   .header__mobile{
+      display: block;
+   }
+   
+   .header__burger{
+      display: block;
+   }
+
+   .header__mobile-top{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+}
+
+@media (max-width: 600px){
+   .header__mobile-top{
+      a img{
+         width: 104px;
+         height: 37px;
+      }
+   }
 }

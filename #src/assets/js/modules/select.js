@@ -1,4 +1,5 @@
-let select = function () {
+const select = function () {
+    
    let selectHeader = document.querySelectorAll('.select32__header');
    let selectItem = document.querySelectorAll('.select32__item')
 
@@ -16,7 +17,7 @@ let select = function () {
 
    function selectChoose() {
        let text = this.innerText;
-       select = this.closest('.select32')
+       let select = this.closest('.select32')
        let currentText = this.closest('.select32').querySelector('.select32__current')
        
        currentText.innerText = text;

@@ -25,11 +25,12 @@
 
       <div class="header__content">
 
-         <a href="#">
+
+         <a class="header__descktop" href="#">
             <img src="./assets/img/logo.svg" alt="">
          </a>
 
-         <ul class="header__nav">
+         <ul class="header__nav  header__descktop">
 
             <li class="header__nav-item">
                <a class="header__nav-link" href="information.html">О нас</a>
@@ -42,9 +43,50 @@
          </ul>
 
 
-         <div>
+         <div class="header__descktop">
             <a class="header__nav-certificate" href="#">Подарочные сертификаты</a>
             <a class="header__phone" href="tel:1234567890">8 961 800 82 80</a>
+         </div>
+
+
+
+
+
+         <div class="header__mobile">
+
+
+            <div class="header__mobile-top">
+               <a href="#">
+                  <img src="./assets/img/logo.svg" alt="">
+               </a>
+   
+               <div class="header__burger">
+                  <div class="header__burger-menu"></div>
+               </div>
+            </div>
+    
+
+            <ul class="header__mobile-list">
+
+               <li class="header__mobile-menu">
+                  <a class="header__phone" href="tel:1234567890">8 961 800 82 80</a>
+               </li>
+
+               <li class="header__mobile-menu">
+                  <a class="header__nav-link" href="information.html">О нас</a>
+               </li>
+
+               <li class="header__mobile-menu">
+                  <a class="header__nav-link" href="#">Как сделать заказ?</a>
+               </li>
+
+               <li class="header__mobile-menu">
+                  <a class="header__nav-certificate" href="#">Подарочные сертификаты</a>
+               </li>
+
+            </ul>
+
+
          </div>
 
       </div><!-- header__content -->
@@ -102,7 +144,7 @@
 
          <a class="btn" href="#">Выбрать тур из каталога</a>
 
-      </div>
+      </div><!-- intro__box -->
 
    </div><!-- container -->
 </div><!-- intro -->
@@ -166,69 +208,7 @@
 
 </nav><!-- nav -->
 
-   <div class="tour-selection  information">
-   <div class="container">
-      <div class="tour-selection__inner">
-
-         <h2 class='title tour-selection__title'>
-            Подберите тур за 20 секунд
-         </h2>
-
-         <form class='tour-selection__form'>
-
-            
-
-            <ul class="tour-selection__list">
-
-               <li class="tour-selection__item">
-                  <p class="tour-selection__text">Сколько вас человек?</p>
-                  <input type="text" placeholder="от 1 до 12 человек">
-              
-               </li>
-
-               <li class="tour-selection__item">
-                  <p class="tour-selection__text">Сколько хотите кататься?</p>
-                  <input type="text" placeholder="от 1 до 12 часов">
-               </li>
  
-
-               <li class="tour-selection__item">
-                  <p class="tour-selection__text">Выберите место катания</p>
-                  <div class="select32 select32--wh">
-                     <div class="select32__header">
-                        <span class="select32__current">ул. Трахтынберга 14, ст...</span>
-                        <img src="assets/img/arrow.svg" alt="">
-                     </div>
-
-                     <div class="select32__body">
-                        <div class="select32__item">Снегоходы</div>
-                        <div class="select32__item">Выбор 1</div>
-                        <div class="select32__item">Выбор 2</div>
-                     </div>
-                  </div>
-               </li>
-
-               <li class="tour-selection__item">
-                  <button class='  btn'>
-                     Выбрать тур
-                  </button>
-               </li>
-
-            </ul>
-
-            <div class="tour-selection__links">
- 
-               <a class="tour-selection-link" href="#">х Сбросить фильтр</a>
-
-            </div>
-        
-         </form>
-
-      </div> <!-- tour-selection__inner  -->
-
-   </div><!-- container -->
-</div><!-- tour-selection -->
-
     
 <div class="block-standart__section">
    <div class="section__content">
@@ -571,69 +551,75 @@
 </div>
 
    <div class="advantages">
-   
+
    <h2 class="title advantages__title">
       Почему выбирают Актив Тур?
    </h2>
 
-   <ul class="advantages__list">
+   <div class="container">
 
-      <li class="advantages__item">
-         <img src="./assets/img/advantages1.png" alt="">
 
-         <h3 class="advantages__item-title">
-            Туры от ведущих
-            туроператоров
-         </h3>
+      <ul class="advantages__list">
 
-         <p class="advantages__item-text">
-            Продаём туры только
-            проверенных туроператоров
-         </p>
-      </li>
+         <li class="advantages__item">
+            <img src="./assets/img/advantages1.png" alt="">
 
-      <li class="advantages__item">
-         <img src="./assets/img/advantages2.png" alt="">
+            <h3 class="advantages__item-title">
+               Туры от ведущих
+               туроператоров
+            </h3>
 
-         <h3 class="advantages__item-title">
-            5 лет работы
-            в интернете
-         </h3>
+            <p class="advantages__item-text">
+               Продаём туры только
+               проверенных туроператоров
+            </p>
+         </li>
 
-         <p class="advantages__item-text">
-            Продаём туры только
-            проверенных туроператоров
-         </p>
-      </li>
+         <li class="advantages__item">
+            <img src="./assets/img/advantages2.png" alt="">
 
-      <li class="advantages__item">
-         <img src="./assets/img/advantages3.png" alt="">
+            <h3 class="advantages__item-title">
+               5 лет работы
+               в интернете
+            </h3>
 
-         <h3 class="advantages__item-title">
-            Оплата тура 
-            по частям
-         </h3>
+            <p class="advantages__item-text">
+               Продаём туры только
+               проверенных туроператоров
+            </p>
+         </li>
 
-         <p class="advantages__item-text">
-            Продаём туры только
-            проверенных туроператоров
-         </p>
-      </li>
+         <li class="advantages__item">
+            <img src="./assets/img/advantages3.png" alt="">
 
-      <li class="advantages__item">
-         <img src="./assets/img/advantages4.png" alt="">
+            <h3 class="advantages__item-title">
+               Оплата тура
+               по частям
+            </h3>
 
-         <h3 class="advantages__item-title">
-            Безопасность
-         </h3>
+            <p class="advantages__item-text">
+               Продаём туры только
+               проверенных туроператоров
+            </p>
+         </li>
 
-         <p class="advantages__item-text">
-            Продаём туры только
-            проверенных туроператоров
-         </p>
-      </li>
+         <li class="advantages__item">
+            <img src="./assets/img/advantages4.png" alt="">
 
-   </ul>
+            <h3 class="advantages__item-title">
+               Безопасность
+            </h3>
+
+            <p class="advantages__item-text">
+               Продаём туры только
+               проверенных туроператоров
+            </p>
+         </li>
+
+      </ul>
+
+   </div>
+
 </div>
 
 
@@ -791,42 +777,7 @@
    </div>
 
 
-   <div class="blog-info blog-info-two blog-info-three ">
-
-   <div class="blog-info__img">
-      <img src="assets/img/blog-info2.png" alt="">
-   </div>
-
-   <div class="blog-info__content">
-      <h2 class="title">Заголвоок 1</h2>
-
-     <p class='blog-info-three__description'>
-      Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus
-     </p>
-
-   </div><!-- blog-info__content -->
-</div><!-- blog-info -->
-
-   <div class="blog-info  blog-info-three">
-
-   <div class="blog-info__img">
-      <img src="assets/img/blog-info1.png" alt="">
-   </div>
-
-   <div class="blog-info__content">
-      <h2 class="title">Заголвоок 1</h2>
-
-      <p class='blog-info-three__description'>
-         Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
-         "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
-         коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно
-         пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое
-         время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время,
-         программы электронной вёрстки типа Aldus
-      </p>
-
-   </div><!-- blog-info__content -->
-</div><!-- blog-info -->
+ 
 
    <div class='btn-info'>
       <a class="btn" href="#">
@@ -860,7 +811,8 @@
          </div>
       </div>
 
-
+ 
+       
       <img class="footer__card" src="assets/img/bank.png" alt="Карты">
 
    </div><!-- footer__container -->

@@ -23,3 +23,10 @@
       color: $blue;
    }
 }
+
+
+@media (max-width: 1163px){
+   .nav__list{
+      display: none;
+   }
+}

@@ -43,7 +43,7 @@ ul li{
 .btn{
    max-width: 336px;
    width: 336px;
-   height: 70px;
+ 
    padding-top: 19px;
    padding-bottom: 19px;
 
@@ -224,3 +224,20 @@ ul li{
 }
 
  
+@media (max-width: 768px){
+   .btn{
+      width: 269px;
+      font-size: 20px;
+
+   }  
+
+   .title{
+      line-height: 1.2;
+      font-size: 31px;
+
+      margin-top: 50px;
+      margin-bottom: 50px;
+   }
+
+  
+}

@@ -102,3 +102,52 @@
 
 
  
+@media (max-width:1275px){
+   .footer__cvadro1, 
+   .footer__cvadro2{
+   display: none;
+   }
+
+}
+
+
+@media (max-width: 768px){
+   .footer{
+      margin-top: 50px;
+   }
+}
+
+@media (max-width: 468px){
+   
+   .footer__phone{
+      margin-top: 15px;
+   }
+   .footer-menu__row{
+      flex-direction: column;
+  
+   }
+   .footer-menu__link{
+      text-align: center;
+   }
+   .footer__top{
+      flex-direction: column;
+   }
+   .footer__container{
+      max-width: 100%;
+      width: 100%;
+   }
+   .footer-menu__link:not(:last-child){
+      margin-bottom: 10px;
+   }
+   .footer-menu__row{
+      margin-bottom: 10px;
+   }
+   .footer-menu{
+      margin-top: 20px;
+   }
+
+   .footer__green{
+      margin-top: 40px;
+   }
+   
+}
