@@ -352,6 +352,14 @@ ul li {
   margin-left: auto;
   margin-right: auto; }
 
+.container-popap {
+  min-width: 320px;
+  width: 830px;
+  max-width: 100%;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto; }
+
 .btn {
   max-width: 336px;
   width: 336px;
@@ -2005,6 +2013,66 @@ ul li {
     margin-bottom: 20px; }
   .service-information__item {
     max-width: 100%; } }
+
+.buy-myself {
+  background-color: #E5E5E5;
+  padding: 80px 15px; }
+
+.buy-myself__address {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+.buy-myself__box {
+  justify-self: flex-end; }
+
+.buy-myself__title {
+  margin-bottom: 35px;
+  text-align: center;
+  font-family: Alegreya Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  color: #000; }
+
+.buy-myself__content-text {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #000;
+  max-width: 232px; }
+
+.buy-myself__content {
+  padding: 13px 13px;
+  width: 308px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFFFFF; }
+
+.step-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.step-list.buy-myself__step {
+  margin-top: 80px;
+  margin-bottom: 45px; }
+
+.step-list-item {
+  opacity: 0.5; }
+
+.step-list-item--active {
+  opacity: 1; }
 
 .footer {
   margin-top: 100px;

@@ -1,0 +1,17 @@
+.step-list{
+   display: flex;
+   justify-content: space-between;
+}
+
+.step-list.buy-myself__step{
+   margin-top: 80px;
+   margin-bottom: 45px;
+}
+
+.step-list-item{
+   opacity: 0.5;
+}
+
+.step-list-item--active{
+   opacity: 1;
+}

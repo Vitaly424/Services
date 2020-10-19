@@ -39,6 +39,11 @@ ul li{
    @include min-max(320px, 1060px, 15px);
 }
 
+.container-popap{
+   @include min-max(320px, 830px, 15px);
+}
+
+
 
 .btn{
    max-width: 336px;
@@ -197,9 +202,7 @@ ul li{
    margin-top: 100px;
    margin-bottom: 100px;
 }
-
-
-
+ 
 
 
 .section{

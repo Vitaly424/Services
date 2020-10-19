@@ -1,0 +1,53 @@
+.buy-myself{ 
+   background-color: $grey-three;
+
+   padding: 80px 15px;
+}
+
+.buy-myself__address{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+ 
+}
+
+.buy-myself__box{
+   justify-self: flex-end;
+
+}
+ 
+.buy-myself__title{
+   margin-bottom: 35px;
+
+   text-align: center;
+
+   font-family: Alegreya Sans;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 43px;
+
+   color: $black;
+
+}
+
+
+.buy-myself__content-text{
+   font-family: 'Alegreya Sans', sans-serif;
+   font-size: 14px;
+   line-height: 1.2;
+
+   color: $black;
+   max-width: 232px;
+}
+
+.buy-myself__content{
+ 
+   padding: 13px 13px;
+   width: 308px;
+   
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   background-color: $white;
+}
