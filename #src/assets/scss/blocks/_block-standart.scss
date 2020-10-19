@@ -2,47 +2,39 @@
 
 
 
-.block-standart__section{
-   margin-top: 50px;
+.block-standart{
+   margin-top: 100px;
    margin-bottom: 100px;
 
-   display: flex;
-   overflow: hidden;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
 
- 
 }
 
  
-
-.block-standart__section-conten{
-   flex: 0 0 100%;
-   display: flex;
+.block-standart__content{
+   justify-self: flex-end;
+   
+   padding-left: 15px;
+   padding-right: 15px;
 }
 
-.block-standart__section-image{
-   padding-bottom: 427px;
 
-   position: relative;
-   flex: 0 0 50%;
-   transform: translate(-100%, 0px);
+.block-standart__image{
+   
+
    img{
       max-width: 100%;
-
       width: 100%;
-      height: 100%;
-
-      position: absolute;
-      top: 0;
-      right: 0;
+      height: 500px;
       object-fit: cover;
+      clip-path: polygon(23% 0, 100% 0, 100% 100%, 0% 100%);
    }
 }
 
-
-.block-standart__section-body{
-   width: 50%;
-}
-
+ 
+ 
+ 
 
 
 
@@ -117,8 +109,7 @@
 }
 
 .block-standart__btns{
-   margin-top: 40px;
-   margin-bottom: 21px;
+   margin-top: 50px;
 
    display: flex;
    align-items: center;
@@ -129,47 +120,58 @@
 }
 
 
+@media (max-width: 968px){
+   .block-standart{
+      grid-template-columns: 1fr;
+   }
+   .block-standart__content{
+      grid-row: 2 / 3;
+   }
 
-
-
-
-
- 
-
-.block-standart__section{
-   display: flex;
-   overflow: hidden;
-}
-
- 
-
-.block-standart__content{
-   flex: 0 0 100%;
-   display: flex;
-}
-
-.section__image{
-   padding-bottom: 427px;
-
-   position: relative;
-   flex: 0 0 50%;
-   transform: translate(-100%, 0px);
-   img{
-      max-width: 100%;
-
-      width: 100%;
-      height: 100%;
-
-      position: absolute;
-      top: 0;
-      right: 0;
-      object-fit: cover;
+   .block-standart__image{
+      grid-row: 1 / 2;
+   }
+   .block-standart__content{
+      margin-top: 20px;
+      justify-self: center;
    }
 }
 
 
-.block-standart__section-body{
-   width: 50%;
+@media (max-width: 642px){
+   .block-standart__btns{
+      flex-direction: column;
+      .btn-arrow{
+         margin-bottom: 30px;
+         margin-right: 0;
+         
+         width: 270px;
+      }
+   }
+
+   .block-standart__image img{
+      height: auto;
+   }
+   
 }
 
- 
+@media (max-width: 582px){
+   .block-standart__info{
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+   }
+}
+
+@media (max-width: 543px){
+   .block-standart__geo{
+      max-width: 362px;
+   }
+   .block-standart__geo-text a{
+      margin-top: 5px;
+      margin-left: 0;
+   }
+   .block-standart__geo-text span{
+      display: none;
+   }
+}

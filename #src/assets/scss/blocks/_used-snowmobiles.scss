@@ -1,0 +1,67 @@
+ 
+.used-snowmobiles__title{
+   margin-bottom: 45px;
+   text-align: center;
+}
+
+.used-snowmobiles{
+   max-width: 981px;
+   margin-left: auto;
+   margin-right: auto;
+
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+ 
+
+.used-snowmobiles__item{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.used-snowmobiles__content-title{
+   margin-bottom: 40px;
+
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 1.2;
+   color: $black;
+}
+
+.used-snowmobiles__content-list{
+   padding-left: 13px;
+}
+
+.used-snowmobiles__content-item{
+ 
+   font-size: 20px;
+   line-height: 1.5;
+   font-weight: 400;
+
+   color: $black;
+}
+ 
+.used-snowmobiles__content-item.used-snowmobiles__content-item--blue{
+   color: $blue ;
+}
+
+
+@media (max-width: 925px){
+   .used-snowmobiles__item{
+ 
+      flex-direction: column;
+
+      img{
+         margin-bottom: 20px;
+         max-width: 100%;
+      }
+   }
+   .used-snowmobiles__content-list{
+      padding-left: 0;
+   }
+   .used-snowmobiles__content-title{
+      margin-bottom: 20px;
+   }
+}

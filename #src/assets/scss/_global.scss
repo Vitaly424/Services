@@ -73,7 +73,6 @@ ul li{
    font-weight: 700;
    font-size: 40px;
    line-height: 1.4;
-
    color: $blue;
 
    &.title-linear{
@@ -88,6 +87,16 @@ ul li{
          background-color: $green;
       }
    }
+   
+   &.title--center{
+      text-align: center;
+   }   
+
+}
+
+ 
+.title.title--mb{
+   margin-bottom: 65px;
 }
 
 .about-info__title{
@@ -116,8 +125,9 @@ ul li{
    position: relative;
 
    
-   max-width: 276px;
-   width: 277px;
+ 
+   width: 336px;
+   max-width: 336px;
    height: 70px;
    padding-top: 19px;
    padding-bottom: 19px;
@@ -171,12 +181,22 @@ ul li{
          background-image: url('../img/arrow-right-black.svg');
       }
    }
+ 
 }
 
 
+@media (max-width: 768px){
+   .btn-arrow{
+      width: 270px;
+      font-size: 20px;
+   }
+}
 
 
-
+.service__title{
+   margin-top: 100px;
+   margin-bottom: 100px;
+}
 
 
 
@@ -237,7 +257,13 @@ ul li{
 
       margin-top: 50px;
       margin-bottom: 50px;
+ 
    }
 
+ 
   
+}
+
+.none{
+   display: none;
 }

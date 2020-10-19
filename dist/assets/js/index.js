@@ -1,10 +1,22 @@
+var swiper = new Swiper('.swiper-container', {
+   spaceBetween: 30,
+   effect: 'fade',
+   pagination: {
+     el: '.swiper-pagination',
+     clickable: true,
+   },
+   navigation: {
+     nextEl: '.swiper-button-next',
+     prevEl: '.swiper-button-prev',
+   },
+ });
  
 
 document.addEventListener('DOMContentLoaded', () => {
    const select = function () {
     
-   let selectHeader = document.querySelectorAll('.select32__header');
-   let selectItem = document.querySelectorAll('.select32__item')
+   let selectHeader = document.querySelectorAll('.filter-tour__header');
+   let selectItem = document.querySelectorAll('.filter-tour__item')
 
    selectHeader.forEach(item => {
        item.addEventListener('click', selectToggle);
@@ -20,8 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
    function selectChoose() {
        let text = this.innerText;
-       let select = this.closest('.select32')
-       let currentText = this.closest('.select32').querySelector('.select32__current')
+       let select = this.closest('.filter-tour')
+       let currentText = this.closest('.filter-tour').querySelector('.filter-tour__current')
        
        currentText.innerText = text;
        select.classList.remove('is-active');
@@ -50,7 +62,6 @@ select();;
 }
  
 
-burgerMenu();;   
+burgerMenu();;
 });
-
  

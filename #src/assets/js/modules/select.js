@@ -1,7 +1,7 @@
 const select = function () {
     
-   let selectHeader = document.querySelectorAll('.select32__header');
-   let selectItem = document.querySelectorAll('.select32__item')
+   let selectHeader = document.querySelectorAll('.filter-tour__header');
+   let selectItem = document.querySelectorAll('.filter-tour__item')
 
    selectHeader.forEach(item => {
        item.addEventListener('click', selectToggle);
@@ -17,8 +17,8 @@ const select = function () {
 
    function selectChoose() {
        let text = this.innerText;
-       let select = this.closest('.select32')
-       let currentText = this.closest('.select32').querySelector('.select32__current')
+       let select = this.closest('.filter-tour')
+       let currentText = this.closest('.filter-tour').querySelector('.filter-tour__current')
        
        currentText.innerText = text;
        select.classList.remove('is-active');

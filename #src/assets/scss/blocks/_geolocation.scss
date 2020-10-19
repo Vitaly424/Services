@@ -1,0 +1,76 @@
+
+.geolocation{
+   margin-top: 84px;
+   margin-bottom: 84px;
+
+   display: grid;
+   grid-template-columns: 40% 60%;
+}
+
+.geolocation__content{
+   justify-self: flex-end;
+
+   max-width: 348px;
+   padding-top: 10px;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.geolocation__title{
+   margin-bottom: 13px;
+   
+   font-weight: 700;
+   line-height: 1.5;
+   font-size: 30px;
+}
+
+.geolocation__desk{
+   margin-bottom: 13px;
+
+   font-size: 20px;
+   line-height: 1.5;
+   color: $black;
+}
+
+.geolocation__desk{
+   color: $gray-two;
+}
+
+.geolocation__desk--mt{
+   margin-top: 27px;
+}
+
+.geolocation__map iframe{
+   width: 100%;
+   clip-path: polygon(9% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.geolocation__link{
+   color: $blue;
+   border-bottom: 1px dashed $blue;
+}
+
+
+@media (max-width: 806px){
+   .geolocation__desk{
+      font-size: 16px;
+   }
+}
+
+
+@media (max-width: 768px){
+   .geolocation{
+      grid-template-columns: 1fr;
+   }
+
+   .geolocation__content{
+      justify-self: center;
+
+      grid-row: 2 / 3;
+   }
+
+   .geolocation__map iframe{
+      width: 100%;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+   }
+}

@@ -1,0 +1,269 @@
+.prices{
+   margin-top: 50px;
+   margin-bottom: 100px;
+}
+
+.prices__title{
+   margin-bottom: 50px;
+
+   text-align: center;
+}
+
+.prices__subtitle{
+   margin-bottom: 60px;
+
+   span{
+      display: block;
+   }
+
+   font-size: 20px;
+   line-height: 1.5;
+   text-align: center;
+
+   color: $black;
+}
+
+
+
+.prices__list-item{
+   margin-bottom: 15px;
+   padding: 25px 20px;
+
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   align-items: center;
+
+   &.prices__list-item--active{
+      background-color: $green;
+   }
+
+   border: 3px solid $green;
+}
+
+
+
+.prices__list-name{
+   display: flex;
+   align-items: center;
+}
+
+.prices__list-choice-input{
+   position: absolute;
+   z-index: -3;
+   opacity: 0;
+}
+
+.prices__list-choice-input + label{
+   display: inline-flex;
+   align-items: center;
+   user-select: none;
+
+   &::before{
+      content: "";
+      display: block;
+
+      width: 30px;
+      height: 30px;
+
+      border: 3px solid #1D8FE1;
+      box-sizing: border-box;
+      cursor: pointer;
+   }
+}
+
+.prices__list-choice-input:checked + label{
+   background-image: url('../img/jackdaw.svg');
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+
+
+
+.prices__list-name-choice-text{
+   margin-left: 20px;
+}
+
+.prices__list-type{
+   justify-self: center;
+}
+
+
+.prices__list-quantity{
+   display: flex;
+   align-items: center;
+}
+
+.prices__list-count-number{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   width: 48px;
+   height: 40px;
+
+   border: 3px solid $blue;
+}
+
+.prices__list-quantity-name{
+   margin-right: 23px;
+}
+
+.prices__list-minus,
+.prices__list-plus{
+   font-size: 23px;
+   cursor: pointer;
+}
+
+.prices__list-minus{
+   margin-right: 10px;
+}
+
+.prices__list-plus{
+   margin-left: 10px;
+}
+
+.prices__list-count{
+   display: flex;
+   align-items: center;
+}
+
+.prices__list-price{
+   display: flex;
+   align-items: center;
+}
+
+.prices__list-price{
+   justify-self: flex-end;
+}
+
+.prices__list-price-number{
+   margin-left: 35px;
+}
+
+
+
+.prices__result-message{
+   display: flex;
+   justify-content: flex-end;
+
+   padding: 15px 20px;
+
+   border: 3px solid $blue;
+}
+
+ 
+.prices__result-price{
+   display: flex;
+   align-items: center;
+   margin-right: 80px;
+
+   font-weight: 700;
+   font-size: 20px;
+   color: $black;
+}
+
+ 
+.prices__result-price-text{
+   margin-right: 25px;
+}
+
+.prices__result-warning{
+   font-family: Oswald;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+ 
+   color: $red;
+}
+
+.prices__btns{
+   margin-top: 60px;
+   text-align: center;
+}
+
+.prices__btn{
+   margin-right: 40px;
+}
+
+
+@media (max-width: 780px){
+   .prices__list-name-choice-text{
+      display: none;
+   }
+
+  
+   .prices__list-item{
+      grid-template-columns: 50px 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      
+     
+   }
+   .prices__list-quantity{
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+   }
+   .prices__list-price{
+      grid-column: 3 / 4;
+      grid-row: 3 / 4;
+   }
+   .prices__list-name{
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+   }
+   .prices__list-type{
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+
+      justify-self: flex-start;
+   }
+
+   .prices__list-item {
+      padding-top: 14px;
+      padding-bottom: 14px;
+   }
+
+   .prices__list-price-number{
+      margin-left: 5px;
+   }
+   .prices__list-quantity-name{
+      margin-right: 14px;
+   }
+}
+
+
+@media (max-width: 768px){
+   .prices__btns{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .prices__btn{
+      margin-right: 0;
+      margin-bottom: 30px;
+   }
+
+   .prices__result-message{
+      flex-direction: column;
+      align-items: center;
+   }
+   .prices__result-price{
+      margin-bottom: 10px;
+      margin-right: 0;
+   }
+ 
+}
+
+@media (max-width: 405px){
+   .prices__list-price{
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+
+      justify-self: flex-start;
+   }
+
+   .prices__list-item{
+      grid-template-columns: 50px 1fr;
+   }
+}
+

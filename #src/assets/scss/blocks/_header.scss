@@ -176,6 +176,10 @@
       display: none;
    }
 
+   .header{
+      background-color: $white;
+   }
+
    .header__mobile{
       display: block;
    }
@@ -199,4 +203,9 @@
          height: 37px;
       }
    }
+}
+
+
+.header__nav-link.header__nav-link--white{
+   color: $white;
 }

@@ -1,0 +1,49 @@
+.service-information{
+   display: flex;
+   justify-content: space-between;
+
+   max-width: 1096px;
+   margin-left: auto;
+   margin-right: auto;
+   
+   margin-right: auto;  
+
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.service-information__item{
+   max-width: 534px;
+}
+
+.service-information__title{
+   margin-bottom: 25px;
+
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 1.2;
+   color: $black;
+}
+
+.service-information__item:not(:last-child){
+   margin-bottom: 10px;
+}
+
+
+@media (max-width: 1037px){
+   .service-information{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+ 
+   .service-information__item{
+      max-width: 100%;
+     
+      margin-bottom: 20px;
+   }
+   .service-information__item{
+      max-width: 100%;
+   }
+}

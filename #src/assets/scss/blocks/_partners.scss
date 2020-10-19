@@ -33,6 +33,11 @@
 
    background-color: #EFF2F5;
    text-align: center;
+
+   img{
+      display: block;
+      max-width: 100%;
+   }
 }
 
 .partners__list{
@@ -43,7 +48,9 @@
    flex-wrap: wrap;
 }
 
-
+.partners__title--blue{
+   color: $blue;
+}
 
 @media (max-width: 1267px){
    .partners__list{
@@ -54,6 +61,7 @@
    .partners__list-item{
       justify-self: center;
       width: 100%;
+
    }
    .partners__title{
       line-height: 1;

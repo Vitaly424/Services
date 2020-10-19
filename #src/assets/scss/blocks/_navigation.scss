@@ -22,6 +22,10 @@
    &:hover{
       color: $blue;
    }
+
+   &.nav__item-link--active{
+      color: $blue;
+   }
 }
 
 

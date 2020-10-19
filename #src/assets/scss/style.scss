@@ -5,7 +5,7 @@
 @import './utilities/_fonts';
 @import './global';
 
-
+ 
 //blocks
 @import "./blocks/header";
 @import  "./blocks/intro";
@@ -16,5 +16,14 @@
 @import './blocks/advantages';
 @import "./blocks/services-about";
 @import "./blocks/block-standart";
+
+@import "./blocks/preview";
+@import "./blocks/used-snowmobiles";
+@import "./blocks/price";
+@import "./blocks/questions-answer";
+@import "./blocks/geolocation";
+
+@import "./blocks/atw-slider";
+@import "./blocks/service-information";
 
 @import "./blocks/footer";
