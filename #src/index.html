@@ -12,6 +12,8 @@
    <meta name="Copyright" content="">
    <meta name="Address" content=""> -->
 
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="assets/css/style.min.css">
@@ -59,87 +61,17 @@
    @@include('assets/components/_footer.html')
 
 
-   <div class="buy-myself">
-      <h2 class="buy-myself__title">
-         Выберите адрес
-      </h2>
-
-
-      <form class="buy-myself__form">
-
-         <div class="buy-myself__address">
-
-            <div class="buy-myself__box">
-
-               <div class="buy-myself__content">
-                  <div class="buy-myself__content-choice">
-                     <input type="radio" id="choice1" name="a">
-                     <label for="choice1"></label>
-                  </div>
-                  <div class="buy-myself__content-text">
-                     Адрес катаний: село Наумовка, Ежевского района, Московской области
-                  </div>
-               </div>
-
-               <div class="buy-myself__content">
-                  <div class="buy-myself__content-choice">
-                     <input type="radio" id="choice2" name="a">
-                     <label for="choice2"></label>
-                  </div>
-                  <div class="buy-myself__content-text">
-                     Адрес катаний: село Наумовка, Ежевского района, Московской области
-                  </div>
-               </div>
-
-               <div class="buy-myself__content">
-                  <div class="buy-myself__content-choice">
-                     <input type="radio" id="choice3" name="a">
-                     <label for="choice3"></label>
-                  </div>
-                  <div class="buy-myself__content-text">
-                     Адрес катаний: село Наумовка, Ежевского района, Московской области
-                  </div>
-               </div>
-
-            </div>
-
-            <div class="buy-myself__map">
-               <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3792.260451976407!2d37.037022102151376!3d55.58649571894516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46caa83f47399fa3%3A0xb4d03c91f2ad68b8!2z0K3RgdGC0LXQudGCIDPQlA!5e0!3m2!1sru!2sru!4v1603118435192!5m2!1sru!2sru"
-                  width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                  tabindex="0"></iframe>
-            </div>
-
-         </div>
 
 
 
-         <div class="container-popap">
-            <ul class="step-list  buy-myself__step">
 
-               <li class="step-list-item  step-list-item--active">
-                  1. Выбор квадроциклов
-               </li>
+   @@include('assets/components/_popup-buy-myself.html')
+
+
    
-               <li class="step-list-item">
-                  2. Выбор даты и времени
-               </li>
-   
-               <li class="step-list-item">
-                  3. Оплата
-               </li>
-               
-            </ul>   
-         </div>
+   @@include('assets/components/_purchase-gift.html')
+
  
-
-         <div class="container-popap">
-            
-         </div>         
-
-      </form> <!-- buy-myself -->
-
-   </div>
 
    
    <script src="assets//js/index.min.js"></script>

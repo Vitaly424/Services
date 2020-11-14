@@ -40,7 +40,7 @@ ul li{
 }
 
 .container-popap{
-   @include min-max(320px, 830px, 15px);
+   @include min-max(320px, 830px, 0);
 }
 
 
